@@ -1,0 +1,5 @@
+/* Input PlaceHolder Text Align */
+
+input::placeholder{
+    text-align: center;
+}

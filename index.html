@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- TailWind Css CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Raw CSS Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>👋</h1>
+    <header>
+        <h1 class="text-6xl font-bold text-center my-24">Welcome to <span class="font-extrabold text-blue-800">Cheater Bank </span> </h1>
+    </header>
+
+    <main>
+        <section class="w-3/4 mx-auto bg-red-400 py-9 rounded-md">
+            <div class="mx-auto">
+                <h2 class="text-center  text-3xl">Login Here</h2>
+            </div>
+            <div class="mx-auto">
+                
+                <input type="email" name="" id="user-email" placeholder="Your Mail Here" class="w-3/4 mx-auto mt-4 py-1 rounded-md block"> <br>
+                <input type="password" name="" id="user-password" placeholder="Password" class="w-3/4 mx-auto  py-1 rounded-md block"> <br>
+                <button id="login" class=" block  bg-yellow-400 py-3 px-6 mx-auto mb-9 text-black-900 font-semibold rounded-md">Login</button>
+                
+            </div>
+        </section>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Link -->
+    <script src="main.js"></script>
 </body>
 </html>
