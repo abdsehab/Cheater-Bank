@@ -1,17 +1,32 @@
-document.getElementById('deposit-btn').addEventListener('click', function () {
+
+function getValue() {
     const DepositAmount = document.getElementById('deposit-amount');
-    // DepositAmountValue means that value I entered now 
-    const DepositAmountValue = DepositAmount.value;
-    // console.log(DepositAmountValue);
+    const DepositAmountValueText = DepositAmount.value;
+    const DepositAmountValueee = parseFloat(DepositAmountValueText);
+    DepositAmount.value = "";
+    return DepositAmountValueee;
+
+}
+
+
+
+
+document.getElementById('deposit-btn').addEventListener('click', function () {
+    // const DepositAmount = document.getElementById('deposit-amount');
+    // // DepositAmountValue means that value I entered now 
+    // const DepositAmountValue = DepositAmount.value;
+    // // console.log(DepositAmountValue);
+
+    const DepositAmountValue = getValue()
 
     const CurrentDeposit = document.getElementById('current-deposit1');
     // console.log(CurrentDeposit.innerText)
     const previousAmount = CurrentDeposit.innerText;
     // CurrentDepositAmount Refers total Balance
-    const CurrentDepositAmount = (parseFloat(previousAmount) + parseFloat(DepositAmountValue) );
+    const CurrentDepositAmount = (parseFloat(previousAmount) + DepositAmountValue );
     // const CurrentDepositAmount = parseFloat (previousAmount + DepositAmountValue) ;
     CurrentDeposit.innerText = CurrentDepositAmount ;
-    DepositAmount.value = "";
+    // DepositAmount.value = "";
 
     // Update Balance total
 
